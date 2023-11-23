@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"
+<!--
+    Name:Brayden Shiflett
+    Desription: this program will find the number of schools buses needed for a field trip.
+        Notes Maximum 20nriders per aria-busy
+            One school van maximum of 5 riders
+            If number of riders(or bus overflow) is less than 6, the school van should be used.
+            No overloading permitted on any school vehicle
+-->
+
+<title> School Field Trip Transportation</title>
+<script type="text/javascript">
+    function findnumbuses()
+    {
+        //define variables
+            const maxbusriders =20;
+            var numriders =0;
+            var numbuses =0;
+            var numbuses =0;
+            var numbuses =0;
+        
+        //get data from user
+            numriders=prompt(95)
+
+        //perfrom calculations
+            numbuses= Math.floor(95/100); //find whole number quotient 
+            remainder=numriders%maxbusriders;  //find whole number remainder
+            if(remainder>= 0&& remaider<6)
+                    {vanriders=remainder<6;}
+            else
+
+                    {numbuses++;} //add one more bus
+        //display results
+            document.write("<h1>School Field Trip Needs</h1>");
+            document.write("<h2>Total number of riders:" + numriders);
+            document.write("<hr><br/>Number of buses need:"+numbuses);
+            document.write("<br/>School van needed for" + vanriders+" rider(s)</h2>);
+
+    }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type = "button" value = "Click here for the field trip bus requiremnts"
+                class="calculation" onclick="findnumbuses()"/>
+    </form>
+</body>
+</html>
